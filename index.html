@@ -14,7 +14,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+
 
 </head>
 
@@ -27,7 +30,7 @@
                     <p>Your favourite place for high quality, free stock photos</p>
                     <form id="searchForm">
                         <input type="text" class="form-control mb-3" placeholder="Search Photo" id="searchText">
-                        <button type="submit" class="btn btn-primary"> Search Pics</button>
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i> Search Pics</button>
                     </form>
                 </div>
             </div>
@@ -35,53 +38,172 @@
     </section>
 
     <section id="searchResultOverlay">
-        <div class="row" id="searchResult">
+        <div class="row no-gutters" id="searchResult">
 
             <div class="col-sm-12 col-md-4 bg-secondary">
-                <a href="https://images.pexels.com/photos/612891/pexels-photo-612891.jpeg?auto=compress&cs=tinysrgb&h=350"
-                    data-toggle="lightbox">
-                    <img src="https://images.pexels.com/photos/612891/pexels-photo-612891.jpeg?auto=compress&cs=tinysrgb&h=350"
-                        alt="" class="img-fluid"></a>
+                <div class="image">
+                  <a href="https://images.pexels.com/photos/612891/pexels-photo-612891.jpeg?auto=compress&cs=tinysrgb&h=350"
+                      data-toggle="lightbox">
+                      <img src="https://images.pexels.com/photos/612891/pexels-photo-612891.jpeg?auto=compress&cs=tinysrgb&h=350"
+                          alt="" class="img-fluid overlay-image"></a>
+                          <div class="overlay">
+                              <div class="overlay-content">
+                                  <div class="overlay-icons">
+                                    <div>
+                                      <i class="fas fa-heart"></i> 55
+                                    </div>
+                                    <div>
+                                      <i class="fas fa-comment-dots"></i> 20
+                                    </div>
+                                    <div>
+                                      <i class="fas fa-download"></i> 20
+                                    </div>
+                                  </div>
+
+                                  <a href="https://images.pexels.com/photos/612891/pexels-photo-612891.jpeg?auto=compress&cs=tinysrgb&h=350" class="btn btn-primary  text-center" download>Download Image</a>
+                              </div>
+                          </div>
+                </div>
+
             </div>
             <div class="col-sm-12 col-md-4 col-lg-4 bg-secondary">
-                <a href="https://images.pexels.com/photos/611328/pexels-photo-611328.jpeg?auto=compress&cs=tinysrgb&h=350"
-                    data-toggle="lightbox">
-                    <img src="https://images.pexels.com/photos/611328/pexels-photo-611328.jpeg?auto=compress&cs=tinysrgb&h=350"
-                        alt="" class="img-fluid"></a>
+                <div class="image">
+                  <a href="https://images.pexels.com/photos/611328/pexels-photo-611328.jpeg?auto=compress&cs=tinysrgb&h=350"
+                      data-toggle="lightbox">
+                      <img src="https://images.pexels.com/photos/611328/pexels-photo-611328.jpeg?auto=compress&cs=tinysrgb&h=350"
+                          alt="" class="img-fluid overlay-image"></a>
+                          <div class="overlay">
+                              <div class="overlay-content">
+                                  <div class="overlay-icons">
+                                    <div>
+                                      <i class="fas fa-heart"></i> 55
+                                    </div>
+                                    <div>
+                                      <i class="fas fa-comment-dots"></i> 20
+                                    </div>
+                                    <div>
+                                      <i class="fas fa-download"></i> 20
+                                    </div>
+                                  </div>
+
+                                  <a href="https://images.pexels.com/photos/611328/pexels-photo-611328.jpeg?auto=compress&cs=tinysrgb&h=350" class="btn btn-primary  text-center" download>Download Image</a>
+                              </div>
+                          </div>
+                </div>
+
+
+
             </div>
             <div class="col-sm-12 col-md-4 col-lg-4 bg-secondary">
-                <a href="https://images.pexels.com/photos/981062/pexels-photo-981062.jpeg?auto=compress&cs=tinysrgb&h=350"
-                    data-toggle="lightbox">
-                    <img src="https://images.pexels.com/photos/981062/pexels-photo-981062.jpeg?auto=compress&cs=tinysrgb&h=350"
-                        alt="" class="img-fluid"></a>
+                <div class="image">
+                  <a href="https://images.pexels.com/photos/981062/pexels-photo-981062.jpeg?auto=compress&cs=tinysrgb&h=350"
+                      data-toggle="lightbox">
+                      <img src="https://images.pexels.com/photos/981062/pexels-photo-981062.jpeg?auto=compress&cs=tinysrgb&h=350"
+                          alt="" class="img-fluid overlay-image"></a>
+                          <div class="overlay">
+                              <div class="overlay-content">
+                                  <div class="overlay-icons">
+                                    <div>
+                                      <i class="fas fa-heart"></i> 55
+                                    </div>
+                                    <div>
+                                      <i class="fas fa-comment-dots"></i> 20
+                                    </div>
+                                    <div>
+                                      <i class="fas fa-download"></i> 20
+                                    </div>
+                                  </div>
+
+                                  <a href="https://images.pexels.com/photos/981062/pexels-photo-981062.jpeg?auto=compress&cs=tinysrgb&h=350" class="btn btn-primary  text-center" download>Download Image</a>
+                              </div>
+                          </div>
+                </div>
             </div>
             <div class="col-sm-12 col-md-4 bg-secondary">
-                <a href="https://images.pexels.com/photos/1046348/pexels-photo-1046348.jpeg?auto=compress&cs=tinysrgb&h=350"
-                    data-toggle="lightbox">
-                    <img src="https://images.pexels.com/photos/1046348/pexels-photo-1046348.jpeg?auto=compress&cs=tinysrgb&h=350"
-                        alt="" class="img-fluid"></a>
+                <div class="image">
+                  <a href="https://images.pexels.com/photos/1046348/pexels-photo-1046348.jpeg?auto=compress&cs=tinysrgb&h=350"
+                      data-toggle="lightbox">
+                      <img src="https://images.pexels.com/photos/1046348/pexels-photo-1046348.jpeg?auto=compress&cs=tinysrgb&h=350"
+                          alt="" class="img-fluid overlay-image"></a>
+                          <div class="overlay">
+                              <div class="overlay-content">
+                                  <div class="overlay-icons">
+                                    <div>
+                                      <i class="fas fa-heart"></i> 55
+                                    </div>
+                                    <div>
+                                      <i class="fas fa-comment-dots"></i> 20
+                                    </div>
+                                    <div>
+                                      <i class="fas fa-download"></i> 20
+                                    </div>
+                                  </div>
+
+                                  <a href="https://images.pexels.com/photos/1046348/pexels-photo-1046348.jpeg?auto=compress&cs=tinysrgb&h=350" class="btn btn-primary  text-center" download>Download Image</a>
+                              </div>
+                          </div>
+                </div>
             </div>
             <div class="col-sm-12 col-md-4 col-lg-4 bg-secondary">
-                <a href="https://images.pexels.com/photos/1367188/pexels-photo-1367188.jpeg?auto=compress&cs=tinysrgb&h=350"
-                    data-toggle="lightbox">
-                    <img src="https://images.pexels.com/photos/1367188/pexels-photo-1367188.jpeg?auto=compress&cs=tinysrgb&h=350"
-                        alt="" class="img-fluid"></a>
+              <div class="image">
+                  <a href="https://images.pexels.com/photos/1367188/pexels-photo-1367188.jpeg?auto=compress&cs=tinysrgb&h=350"
+                      data-toggle="lightbox">
+                      <img src="https://images.pexels.com/photos/1367188/pexels-photo-1367188.jpeg?auto=compress&cs=tinysrgb&h=350"
+                          alt="" class="img-fluid overlay-image"></a>
+                          <div class="overlay">
+                              <div class="overlay-content">
+                                  <div class="overlay-icons">
+                                    <div>
+                                      <i class="fas fa-heart"></i> 55
+                                    </div>
+                                    <div>
+                                      <i class="fas fa-comment-dots"></i> 20
+                                    </div>
+                                    <div>
+                                      <i class="fas fa-download"></i> 20
+                                    </div>
+                                  </div>
+
+                                  <a href="https://images.pexels.com/photos/1367188/pexels-photo-1367188.jpeg?auto=compress&cs=tinysrgb&h=350" class="btn btn-primary  text-center" download>Download Image</a>
+                              </div>
+                          </div>
+                </div>
             </div>
             <div class="col-sm-12 col-md-4 col-lg-4 bg-secondary">
-                <a href="https://images.pexels.com/photos/1367170/pexels-photo-1367170.jpeg?auto=compress&cs=tinysrgb&h=350"
-                    data-toggle="lightbox">
-                    <img src="https://images.pexels.com/photos/1367170/pexels-photo-1367170.jpeg?auto=compress&cs=tinysrgb&h=350"
-                        alt="" class="img-fluid"></a>
+                <div class="image">
+                    <a href="https://images.pexels.com/photos/1367170/pexels-photo-1367170.jpeg?auto=compress&cs=tinysrgb&h=350"
+                        data-toggle="lightbox">
+                        <img src="https://images.pexels.com/photos/1367170/pexels-photo-1367170.jpeg?auto=compress&cs=tinysrgb&h=350"
+                            alt="" class="img-fluid overlay-image"></a>
+                            <div class="overlay">
+                                <div class="overlay-content">
+                                    <div class="overlay-icons">
+                                      <div>
+                                        <i class="fas fa-heart"></i> 55
+                                      </div>
+                                      <div>
+                                        <i class="fas fa-comment-dots"></i> 20
+                                      </div>
+                                      <div>
+                                        <i class="fas fa-download"></i> 20
+                                      </div>
+                                    </div>
+
+                                    <a href="https://images.pexels.com/photos/1367170/pexels-photo-1367170.jpeg?auto=compress&cs=tinysrgb&h=350" class="btn btn-primary  text-center" download>Download Image</a>
+                                </div>
+                            </div>
+                  </div>
             </div>
 
 
         </div>
 
     </section>
+
+
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
     <script src="js/main.js"></script>

@@ -1,4 +1,4 @@
-/* 
+/*
 
     author: Kumar Shashwat
     github profile: http://www.github.com/shashutech
@@ -11,21 +11,42 @@ var searchResult = document.querySelector('#searchResult');
 function searchImg(e) {
     e.preventDefault();
     var searchText = document.querySelector('#searchText').value;
-    console.log(searchText);
     axios.get('https://pixabay.com/api/?key=9955693-a3e539d45cd91c21499fe9a9f&q=' + searchText + '&image_type=photo&pretty=true')
         .then(function (response) {
             var images = response.data.hits;
             var output = "";
             $.each(images, (index, image) => {
                 output += `
-                
+
+                    
+
                     <div class="col-sm-12 col-md-4 bg-secondary">
-                        <a href="${image.largeImageURL}" data-toggle="lightbox">
-                            <img src="${image.largeImageURL}"
-                                alt="" class="img-fluid">
-                        </a>
+                        <div class="image">
+                          <a href="${image.largeImageURL}"
+                              data-toggle="lightbox">
+                              <img src="${image.largeImageURL}"
+                                  alt="" class="img-fluid overlay-image"></a>
+                                  <div class="overlay">
+                                      <div class="overlay-content">
+                                          <div class="overlay-icons">
+                                            <div>
+                                              <i class="fas fa-heart"></i> ${image.likes}
+                                            </div>
+                                            <div>
+                                              <i class="fas fa-comment-dots"></i> ${image.comments}
+                                            </div>
+                                            <div>
+                                              <i class="fas fa-download"></i> ${image.downloads}
+                                            </div>
+                                          </div>
+
+                                          <a href="${image.pageURL}" class="btn btn-primary  text-center" download>Download Image</a>
+                                      </div>
+                                  </div>
+                        </div>
+
                     </div>
-            
+
                 `;
             })
             searchResult.innerHTML = output;

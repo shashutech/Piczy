@@ -1,4 +1,4 @@
-/* 
+/*
 
     author: Kumar Shashwat
     github profile: http://www.github.com/shashutech
@@ -43,7 +43,32 @@ h6 {
     margin: 0;
 }
 
-#searchResultOverlay .row .col-md-4 {
-    padding: 0 !important;
-    margin: 0 !important;
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    color: #fff;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+.overlay .overlay-content{
+  padding: 10px 20px;
+}
+.overlay .overlay-content .overlay-icons {
+  font-size: 25px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 20px;
+}
+.overlay a{
+  display: block;
+  width: 100%;
+}
+.image:hover .overlay {
+    opacity: 1;
+    transition: all 1s;
 }
